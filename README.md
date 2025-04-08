@@ -1,79 +1,81 @@
 # Netflix_DataEngineering_Project
 
-# Overview
+## Overview
 
 This project is a real-time, end-to-end Azure Data Engineering solution built using the latest tools and technologies. It covers data ingestion, transformation, validation, and orchestration to create a production-grade pipeline leveraging the Medallion Architecture (Bronze, Silver, and Gold layers)
 
-# Features
+## Features
 
-Dynamic, parameterized data pipelines in Azure Data Factory (ADF)
+1. Dynamic, parameterized data pipelines in Azure Data Factory (ADF)
 
-Incremental data ingestion using Databricks Autoloader
+2. Incremental data ingestion using Databricks Autoloader
 
-Delta Live Tables for efficient ETL workflows
+3. Delta Live Tables for efficient ETL workflows
 
-Orchestrated workflows in Databricks
+4. Orchestrated workflows in Databricks
 
-Data validation and monitoring using ADF & Azure Monitoring
+5. Data validation and monitoring using ADF & Azure Monitoring
 
-Seamless data integration with Azure Synapse Analytics & Power BI
+6. Seamless data integration with Azure Synapse Analytics & Power BI
 
-# Architecture
+## Architecture
 
-**Technologies Used:**
+### Technologies Used:
 
-Azure Data Factory (ADF) – for data ingestion from GitHub & Azure Data Lake
+1. Azure Data Factory (ADF) – for data ingestion from GitHub & Azure Data Lake
 
-Azure Data Lake Storage (ADLS Gen2) – for scalable cloud storage
+2. Azure Data Lake Storage (ADLS Gen2) – for scalable cloud storage
 
-Azure Databricks – for data transformation, ETL, and orchestration
+3. Azure Databricks – for data transformation, ETL, and orchestration
 
-Azure Synapse Analytics – for data warehousing and reporting
+4. Azure Synapse Analytics – for data warehousing and reporting
 
-Power BI – for data visualization
+5. Power BI – for data visualization
 
-**Workflow**
+### Workflow
 
-Data Source: Netflix data is stored in GitHub and Azure Data Lake.
+1. Data Source: Netflix data is stored in GitHub and Azure Data Lake.
 
-Data Ingestion: ADF copies data dynamically into ADLS (Bronze Layer).
+2. Data Ingestion: ADF copies data dynamically into ADLS (Bronze Layer).
 
-Incremental Loading: Databricks Autoloader reads new data and stores it in the Silver Layer.
+3. Incremental Loading: Databricks Autoloader reads new data and stores it in the Silver Layer.
 
-Transformation: Databricks processes data using Delta Live Tables, applying business logic and aggregations.
+4. Transformation: Databricks processes data using Delta Live Tables, applying business logic and aggregations.
 
-Gold Layer: Refined data is stored in the Gold Layer (Delta Lake) for analysis.
+5. Gold Layer: Refined data is stored in the Gold Layer (Delta Lake) for analysis.
 
-Data Consumption: The final dataset is available for Azure Synapse Analytics & Power BI.
+6. Data Consumption: The final dataset is available for Azure Synapse Analytics & Power BI.
 
-# Project Setup
+## Project Setup
 
-**Prerequisites**
+### Prerequisites
 
-Azure Account (with free credits)
+1. Azure Account (with free credits)
 
-Databricks Workspace (created in Azure Portal)
+2. Databricks Workspace (created in Azure Portal)
 
-Azure Data Lake Storage (ADLS Gen2)
+3. Azure Data Lake Storage (ADLS Gen2)
 
-Azure Data Factory (ADF)
+4. Azure Data Factory (ADF)
 
-GitHub Repository Access (for Netflix dataset)
+5. GitHub Repository Access (for Netflix dataset)
 
-# Data Sources
+## Data Sources
 
 Netflix Movies & TV Shows Dataset (CSV format)
 
 Source: https://www.kaggle.com/datasets/shivamb/netflix-shows
 
-# Key Learnings
+## Key Learnings
 
-Building Enterprise-Grade Data Pipelines
+1. Building Enterprise-Grade Data Pipelines
 
-Implementing Medallion Architecture
+2. Implementing Medallion Architecture
 
-Working with Azure Data Engineering Tools
+3. Working with Azure Data Engineering Tools
 
-Handling Real-World Data Scenarios
+4. Handling Real-World Data Scenarios
 
-Optimizing Performance using Delta Live Tables
+5. Optimizing Performance using Delta Live Tables
+
+
